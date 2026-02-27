@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 10%;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(0,255,255,0.6);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: cyan;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.skill-bar {
+    margin: 20px 0;
+}
+
+.progress {
+    background: rgba(255,255,255,0.2);
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress div {
+    height: 100%;
+    background: cyan;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
