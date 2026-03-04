@@ -1,25 +1,21 @@
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
+// Botão contato
+document.getElementById("btnContato")
+    .addEventListener("click", () => {
+        document.getElementById("contato")
+            .scrollIntoView({ behavior: "smooth" });
     });
-}
 
-// Efeito reveal ao rolar
-const sections = document.querySelectorAll("section");
+// Reveal moderno
+const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
-    sections.forEach(sec => {
-        const top = window.scrollY;
-        const offset = sec.offsetTop - 400;
-        if (top > offset) {
-            sec.style.opacity = 1;
-            sec.style.transform = "translateY(0)";
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
         }
     });
+}, {
+    threshold: 0.2
 });
 
-sections.forEach(sec => {
-    sec.style.opacity = 0;
-    sec.style.transform = "translateY(50px)";
-    sec.style.transition = "0.6s ease";
-});
+reveals.forEach(sec => observer.observe(sec));

@@ -4,91 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Fernandes | Portfólio</title>
+
+    <meta name="description" content="Portfólio de Vinicius Fernandes - Engenharia da Computação, Desenvolvimento Web e Sistemas Embarcados">
+
     <link rel="stylesheet" href="style.css">
-<script defer src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
+
 <body>
 
-    <header class="header">
-        <nav>
-            <h2>Vinicius Fernandes</h2>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="header">
+    <nav class="container">
+        <h2 class="logo">Vinicius Fernandes</h2>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Engenharia da Computação</h1>
-            <p>Desenvolvedor | Sistemas Embarcados | Web | Gestão Ágil</p>
-            <button onclick="scrollToSection('contato')">Entre em Contato</button>
-        </div>
+        <ul class="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <div class="hero-img">
-            <img src="assets/images/profile-ai.png" alt="Vinicius Fernandes">
-        </div>
-    </section>
+<main>
 
-    <section id="sobre" class="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
-            Tenho 21 anos e sou graduando em Engenharia da Computação na Universidade SENAI CIMATEC.
-            Apaixonado por tecnologia, com forte interesse em sistemas embarcados,
-            desenvolvimento Web e gestão ágil.
-        </p>
-    </section>
+<section class="hero container">
+    <div class="hero-text">
+        <h1>Engenharia da Computação</h1>
+        <p>Desenvolvedor | Sistemas Embarcados | Web | Gestão Ágil</p>
+        <button id="btnContato">Entre em Contato</button>
+    </div>
 
-    <section id="projetos" class="projetos">
-        <h2>Projetos</h2>
+    <div class="hero-img">
+        <img src="assets/images/profile-ai.png"
+             alt="Foto de Vinicius Fernandes">
+    </div>
+</section>
+
+<section id="sobre" class="container reveal">
+    <h2>Sobre Mim</h2>
+    <p>
+        Graduando em Engenharia da Computação na Universidade SENAI CIMATEC.
+        Experiência em desenvolvimento Web, sistemas embarcados e metodologias ágeis.
+        Foco em resolver problemas reais com tecnologia.
+    </p>
+</section>
+
+<section id="projetos" class="container reveal">
+    <h2>Projetos</h2>
+
+    <div class="grid">
 
         <div class="card">
             <h3>Sistema Interno de Cadastro</h3>
-            <p>API REST em Node.js com CRUD completo e banco JSON.</p>
+            <p>API REST em Node.js com CRUD completo.</p>
         </div>
 
         <div class="card">
             <h3>Robô de Sumô</h3>
-            <p>Desenvolvimento em C++ com Arduino e sensores.</p>
+            <p>Projeto embarcado em C++ com Arduino.</p>
         </div>
 
         <div class="card">
             <h3>Site Marcas Esportivas</h3>
-            <p>Projeto autoral com HTML, CSS e JavaScript.</p>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Habilidades</h2>
-
-        <div class="skill-bar">
-            <span>C / C++</span>
-            <div class="progress"><div style="width:85%"></div></div>
+            <p>Projeto Web com HTML, CSS e JavaScript.</p>
         </div>
 
-        <div class="skill-bar">
-            <span>Java</span>
-            <div class="progress"><div style="width:75%"></div></div>
-        </div>
+    </div>
+</section>
 
-        <div class="skill-bar">
-            <span>JavaScript</span>
-            <div class="progress"><div style="width:70%"></div></div>
-        </div>
-    </section>
+<section id="skills" class="container reveal">
+    <h2>Habilidades Técnicas</h2>
 
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <p>Email: vinifrernandes2005@gmail.com</p>
-        <p>Salvador - BA</p>
-    </section>
+    <div class="skill-bar">
+        <span>C / C++</span>
+        <div class="progress"><div class="p85"></div></div>
+    </div>
 
-    <footer>
-        <p>© 2026 Vinicius Fernandes | Desenvolvido com foco e disciplina.</p>
-    </footer>
+    <div class="skill-bar">
+        <span>Java</span>
+        <div class="progress"><div class="p75"></div></div>
+    </div>
+
+    <div class="skill-bar">
+        <span>JavaScript</span>
+        <div class="progress"><div class="p70"></div></div>
+    </div>
+</section>
+
+<section id="contato" class="container reveal">
+    <h2>Contato</h2>
+    <p>Email: 
+        <a href="mailto:vinifernandes2005@gmail.com">
+            vinifernandes2005@gmail.com
+        </a>
+    </p>
+    <p>Salvador - BA</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Vinicius Fernandes | Desenvolvido com disciplina.</p>
+</footer>
 
 </body>
 </html>
