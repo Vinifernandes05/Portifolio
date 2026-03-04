@@ -185,6 +185,16 @@ h2::after {
 
 /* ================= SKILLS ================= */
 
+/* Percentuais */
+
+.p75 {
+    width: 75%;
+}
+
+.p100 {
+    width: 100%;
+}
+
 .skill-bar {
     margin-bottom: 25px;
 }
@@ -202,6 +212,7 @@ h2::after {
     background: linear-gradient(90deg, #38bdf8, #22d3ee);
     border-radius: 10px;
 }
+
 
 /* ================= CONTATO ================= */
 
