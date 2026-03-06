@@ -9,11 +9,10 @@ O site foi desenvolvido utilizando **tecnologias fundamentais de desenvolvimento
 
 ## 🎯 Objetivos do Projeto
 
+- Praticar **desenvolvimento web front-end**
 - Apresentar minhas **habilidades técnicas**
 - Disponibilizar links para **GitHub e LinkedIn**
 - Exibir informações profissionais
-- Servir como **cartão de visita online**
-- Praticar **desenvolvimento web front-end**
 
 ---
 
@@ -55,4 +54,4 @@ PORTFOLIO
 │
 └── assets
     └── images
-        └── foto-perfil.png
+        └── Fotoperfil.png
